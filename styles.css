@@ -74,17 +74,17 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 10px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1);
 }
 .tag {
   background-color: #37c567;
   color: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: table;
   margin: 10px auto;
   padding-left:20px;
@@ -102,7 +102,7 @@ h1{
   text-transform: uppercase;
 }
 .card {
-  margin: 50px;
+  margin: 10px;
   max-width: 500px;
   text-align: left;
   background: #ffffff;
@@ -209,6 +209,26 @@ hr{
   margin-right:25%;
   padding-left:25%;
 }
+
+.contact_info{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.contact_info ul{
+  list-style: none;
+  text-align: center;
+}
+.card_background h2{
+  padding:20px;
+  padding-right:20%;
+  padding-left:20%;
+}
+.box_contact{
+  width: 70%;
+  display: block;
+  margin: auto;
+  background-color: #ffffff;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -220,6 +240,7 @@ hr{
       justify-content: space-around;
       margin: 20px auto;
   }
+ 
 
   header {
     min-height: 470px;
