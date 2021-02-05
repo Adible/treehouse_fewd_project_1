@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #f9f9f9;
 }
 /* Link Styles */
 
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgb(20, 24, 43);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -57,10 +57,12 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/profile_header.jpg') no-repeat top center ;
   background-size: cover;
+  width: 100%;
   overflow: hidden;
   padding-top: 60px;
+  margin-bottom:64px;
 }
 header {
   line-height: 1.5;
@@ -77,29 +79,37 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #37c567;
+  color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgb(255, 255, 255,0.2);
+  color:#37c567;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
 }
 .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
+  margin: 50px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #ffffff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #37c567;
 }
 
 ul.skills {
@@ -110,10 +120,13 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #37c567;
   color: white;
   padding: 5px 10px;
   margin: 2px;
+}
+.skills li:hover{
+  cursor: default;
 }
 
 .skills li:nth-child(odd) {
@@ -129,6 +142,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: rgb(0, 0, 0,0.2);
 }
 
 footer ul {
@@ -148,7 +162,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .7;
   transition: all .5s;
 }
 a.twitter {
@@ -162,11 +176,38 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 .clearfix {
   clear: both;
 }
+.card_background h2{
+  color:rgba(255, 255, 255);
+  text-align: center;
+}
+.card_background{
+  background-color: #37c567;
+  background-size: cover;
+  background-position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 6px 6px 0 0;
+}
+.card p{
+  padding: 20px 40px 20px 40px;
+  color: rgb(48, 48, 48);
+}
+hr{
+  margin-top:30px;
+  opacity: 0.2;
+}
 
+.intro p{
+  margin-right:25%;
+  padding-left:25%;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -176,7 +217,7 @@ a.social:hover {
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      margin: 0 auto;
+      margin: 20px auto;
   }
 
   header {
@@ -202,6 +243,12 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
+  
+}
+@media screen and (max-width:720px){
+  .intro p{
+    margin-right:10%;
+    padding-left:10%;
+  }
 }
 

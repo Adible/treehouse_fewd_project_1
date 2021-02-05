@@ -2,54 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jane Smith's Profile</title>
+  <title>Sam De Bock's Profile Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
   <body>
-
-    <div class="main-nav">
+<!--Navigation bar-->
+    <nav class="main-nav">
         <ul class="nav">
-          <li class="name">Jane Smith</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Experience</a></li>
+          <li class="name">Sam De Bock</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
         </ul>
-    </div>
-
+      </nav>
+<!--Header with background & profile pic-->
     <header>
-      <img src="images/me.png" alt="Drawing of Jane Smith" class="profile-image">
-      <h1 class="tag name">Hello, I’m Sam.</h1>
-      <p class="tag location">My home is Portland, Oregon.</p>
+      <img src="images/profile_image.jpg" alt="Picture of me in France" class="profile-image">
+      <h1 class="tag name">Hello, I’m Sam The Man!</h1>
+      <p class="tag location"><strong>Permanent holiday location: Antwerp, Belgium</strong></p>
     </header>
-
+<!--Informatation cards-->
     <main class="flex">
       <div class="card">
-        <h2>Background</h2>
-        <p>I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
-        <p>I’ve been a professional cook and gardener and am a life-long learner who's always interested in expanding my skills.</p>
+        <div class="card_background">
+            <h2 class="hello_title">My Story</h2>
+        </div>
+        <p>As you probably would have guesed, my name is Sam and I'm actually not sure what I am (career-wise). In college I studied Crossmedia Design, which basically made me a Jack of all trades. In my three-year long education I learned about graphic design, motion design, web development and business. Learning all these things in only 3 years led to the fact I can do all these things, well enough, but I can't say I mastered a particular one of them. Sure enough I'm able to do the basic tasks en play out my role in a company, but I don't have a specialty. </p>
+        <p>That is where the Treehouse Techdegree comes in. Moving forward from now on, I want to master the skills of a Front End Engineer and with my design background, I hope to be the person customers/companies need. But most of all, be proud of my skill set and my work.</p>
       </div> 
 
       <div class="card">
-        <h2>Goals</h2>
-        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <div class="card_background">
+          <h2 class="hello_title">My Goals</h2>
+        </div>
+        <p>I would like te learn all about Front End Development and allow myself to create beautiful webpages. But this is not the only thing I want to learn, I would love to think about how webpages function and the user can have the best experience. Diving in that UX/UI department also stands on my bucket list. Even if I will not use it in my day to day job, it most defintely will come in handy as background knowledge as a front end developper.</p>
         <ul class="skills">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>Rails</li>
+          <li>UX design</li>
+          <li>UI design</li>
         </ul>
-        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-      </div> 
-
+      </div>
     </main>
+<!--Footer with social-->
     <footer>
       <ul>
-        <li><a href="#" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/sam-de-bock-301919102/" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/Adible" target="_blank" class="social github">Github</a></li>
       </ul>
-      <p class="copyright">Copyright 2015, Jane Smith</p>
+      <hr>
+      <p class="copyright"><small>&copy; 2021, Sam De Bock</small></p>
     </footer>
   </body>
   </html>
