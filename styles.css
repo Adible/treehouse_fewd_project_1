@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(3, 240, 169);
 }
 a:hover {
   color: #6633ff;
@@ -52,7 +52,9 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #37c567;
+  opacity: 0.5;
+  text-decoration: underline;
 }
 
 header {
@@ -188,7 +190,6 @@ a.social:hover {
 .card_background{
   background-color: #37c567;
   background-size: cover;
-  background-position: relative;
   overflow: hidden;
   margin: 0px;
   padding-top: 20px;
